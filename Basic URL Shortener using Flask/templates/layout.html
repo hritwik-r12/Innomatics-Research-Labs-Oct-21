@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>
+        {% block title %} {% endblock %}
+
+    </title>
+</head>
+<style>
+    .navbar {
+        -webkit-box-shadow: 0 8px 6px -6px rgb(255, 251, 251);
+        -moz-box-shadow: 0 8px 6px -6px rgb(239, 251, 252);
+        box-shadow: 0 8px 6px -6px rgb(222, 231, 236);
+    }
+</style>
+
+<body style="background-color:#84cbd6;">
+    <nav class="navbar navbar-light" style="background-color: rgb(228, 248, 252) ;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">URL Shortener</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/history">History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <nav>
+        <a href="/" style="color:black;font-family:'Courier New';font-size:15px; text-decoration: none">Home </a>
+        <a id="GFG" href="/history" style="color:black;font-family:'Courier New';font-size:15px; text-decoration: none">History</a>
+    </nav> -->
+    {% block content %} {% endblock %}
+</body>
+</body>
+
+</html>
